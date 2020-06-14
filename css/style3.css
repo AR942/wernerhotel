@@ -81,7 +81,7 @@ body{
   transition: all 0.5s ease;
 }
 
-@media (max-width: 1650px)
+@media (max-width: 1800px)
 {
     .wrapper{
         margin-top:20rem;
