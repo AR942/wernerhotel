@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="text/css" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300&family=Josefin+Sans:wght@300&family=Montserrat:wght@300&family=Oswald:wght@300&family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Werner Hôtel</title>
+</head>
+<body>
+
+    <div class="container">
+    <div class="hamburger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <span>Fermer</span>
+      </div>
+  <header>
+      <section class="sidebar">
+
+          <ul class="menu">
+          
+  
+          <li class="menu-item">
+              <a href="index.html" class="menu-link" data-content="Accueil">Accueil</a>
+            </li>
+            <li class="menu-item">
+              <a href="index.html#presentation" class="menu-link" data-content="Suites">Suites</a>
+            </li>
+            <li class="menu-item">
+              <a href="index.html#equipe" class="menu-link" data-content="Equipe">Equipe</a>
+            </li>
+            <li class="menu-item">
+              <a href="index.html#avis" class="menu-link" data-content="Avis">Avis</a>
+            </li>
+            <li class="menu-item">
+              <a href="galerie.html" class="menu-link" data-content="Galerie">Galerie</a>
+            </li>
+            <li class="menu-item">
+              <a href="reserver.html" class="menu-link" data-content="Réserver">Réserver</a>
+            </li>
+          </ul>
+  
+      </section>
+      </div>
+      <nav class="nav" id="navbar">
+          <ul>
+
+             <li><a href="#index.html">Accueil</a></li>
+             <li><a href="index.html#presentation">Suites</a></li>
+             <li><a href="index.html#equipe">Equipe</a></li>
+             
+
+             <li class="logo"><a href="index.html" id="logo"><img src="img/logo.png" alt="" class="white"></a></li>
+
+             <li><a href="index.html#avis">Avis</a></li>
+             <li><a href="galerie.html">Galerie</a></li>
+             <li><a href="reserver.html">Réserver</a></li>
+             
+          </ul>
+      </nav>
+<header class="header3"></header>
+    <div class="wrapper">
+        <h2>Werner Hôtel The Palm</h2>
+        <div id="error_message">
+        </div>
+        <form action="" id="myform" onsubmit = "return validate();">
+          <div class="input_field">
+              <input type="text" placeholder="Nom" id="name" required>
+          </div><br>
+          <div class="input_field">
+              <input type="text" placeholder="Prénom" id="prenom" required>
+          </div><br>
+          <div class="input_field">
+              <h3>Date d'arrivée</h3>
+            <input type="date" id="arivee" placeholder="Date Arrivée" pattern="d{2}/\d{2}/\d{4}" required /><br><br>
+          </div>
+          <div class="input_field">
+              <h3>Date de départ</h3>
+            <input type="date" id="depart" placeholder="Date Arrivée" pattern="d{2}/\d{2}/\d{4}" required /><br><br>
+          </div>
+          
+          <div class="input_field">
+            <select id="rôle" class="button" required>
+                <option value="" disabled selected>Choisir une chambre</option>
+                <option value="Suite Royale">Suite Royale</option>
+                <option value="Suite Présidentielle">Suite Présidentielle</option>
+                <option value="Suite Deluxe">Suite Deluxe</option>
+                <option value="Chambre Première">Chambre Première</option>
+            </select>
+          </div><br>
+          <div class="input_field">
+            <select id="nbrOcc" required>
+                <option value="">Nombre d'occupant</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select><br><br>
+          </div>
+          <div class="input_field">
+              <input type="text" placeholder="Numéro de Téléphone" id="phone" required>
+          </div><br>
+
+          <div class="input_field">
+              <input type="text" placeholder="E-mail" id="email" required>
+          </div><br>
+          <div class="input_field">
+              <textarea placeholder="Veuillez préciser toutes demandes particulières." id="message" required></textarea>
+          </div>
+          <div class="btn">
+              <input type="submit">
+          </div>
+        </form>
+      </div>
+    </header>
+
+      <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3><span><img  class="white" src="img/logo.png" alt=""></span></h3>
+            <p class="footer-links">
+                <a href="index.html" class="link-1">Accueil</a>
+                <a href="index.html#presentation">Suites</a>
+                <a href="index.html#equipe">Equipe</a>
+                <a href="#avis">Avis</a>
+                <a href="galerie.html">Galerie</a>
+                <a href="reserver.html">Réserver</a>
+            </p>
+            <p class="footer-company-name">Werner Hôtel © 2020 - Tous droits réservés.</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Werner The Palm Tower</span>Downtown, Centre de Dubaï, Dubaï</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p><a href="tel:+33643290381">06.43.29.03.81</a></p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:arthus.rouhi@efrei.net">arthus.rouhi@efrei.net</a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>Werner Hôtel</span>
+                Véritable emblème de Dubaï, Werner, The Palm est la destination de vacances par excellence. En couple ou en famille, il y en a pour tous les goûts, des amateurs de sensations fortes aux fins gourmets.
+            </p>
+
+            <div class="footer-icons">
+
+                <a target="_blank" href="https://www.facebook.com/arthus.rouhi"><span><i class="fa fa-facebook"></i></span></a>
+                <a target="_blank" href="https://twitter.com/Tutus942"><span><i class="fa fa-twitter"></i></span></a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=bme9agTM1Ok"><span><i class="fa fa-youtube"></i></span></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script>
+    function validate(){
+  var name = document.getElementById("name").value;
+  var prenom = document.getElementById("prenom").value;
+  var phone = document.getElementById("phone").value;
+  var email = document.getElementById("email").value;
+  
+  error_message.style.padding = "10px";
+  
+  var text;
+  if(name.length < 3){
+    text = "Veuillez renseigner un nom valide.";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(prenom.length < 3){
+    text = "Veuillez renseigner un prénom valide.";
+    error_message.innerHTML = text;
+    return false;
+  }
+  anInputElement = document.getElementById("arivee");
+            if (!/^(\d{4})(\/|-)(\d{1,2})(\/|-)(\d{1,2})$/.test(anInputElement.value)) {
+                alert("Veuillez rentrer la date de votre arrivée.");
+                return (false);
+            }
+  if(isNaN(phone) || phone.length != 10){
+    text = "Veuillez renseigner votre numéro de téléphone.";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(email.indexOf("@") == -1 || email.length < 6){
+    text = "Veuillez renseigner une adresse mail valide.";
+    error_message.innerHTML = text;
+    return false;
+  }
+  var e = document.getElementById("rôle");
+  var result = e.options[e.selectedIndex].value;
+  alert("Votre réservation pour la" + result + "a bien été prise en compte. En cette période de COVID-19, notre hôtel est reste fermé. Nous vous recontacterons au plus vite pour vous informer de notre réouverture avec à la clef des grandes promotions sur nos chambres.");
+  return true;
+}
+
+
+
+document.querySelector(".hamburger-menu").addEventListener("click", () => {
+
+document.querySelector(".container").classList.toggle("change");
+
+});
+        </script>
+    
+</body>
+</html>
