@@ -85,14 +85,14 @@ body{
 @media (max-width: 1800px)
 {
     .wrapper{
-        margin-top:20rem;
+        margin-top:10rem;
     }
 }
 @media (max-width: 450px){
     .wrapper
 {
     
-   margin-top:20rem;
+   margin-top:10rem;
 } 
 
 }
