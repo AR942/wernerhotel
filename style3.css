@@ -1,0 +1,83 @@
+body{
+    background-image: url("../img/atlantis.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.header3
+{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 60vh;
+} 
+.wrapper{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 370px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 0.7rem;
+  box-shadow: 3rem 3rem 3rem rgba(0,0,0,0.4);
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #FF1493;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper .input_field input[type="date"],
+.wrapper .input_field .button,
+.wrapper .input_field #nbrOcc,
+.wrapper textarea{
+  border: 2px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #FF1493;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.wrapper .btn:hover input[type="submit"]{
+  color: black;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 16px;
+  transition: all 0.5s ease;
+}
+
